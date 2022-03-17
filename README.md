@@ -14,7 +14,7 @@
 ### 외산 게임엔진에 대한 의존도를 낮추고, 웹에서 구동되는 메타버스 플랫폼 자체 개발을 목표로 함. 회사의 3D 콘텐츠 개발 기술력을 활용해 실증화 가능한 서비스 개발 목표
 ### 게임엔진(Unity, Unreal)을 활용한 메타버스 플랫폼 개발(VR/AR 기술 적용, 360도 파노라마 기능 개발)해 소상공인 및 지역경제에 기여할 수 있는 맞춤형 기능 구현
 ### 범용적인 플랫폼 개발을 위한 Web 3D 기반 Three.js Babylon.js 등 타입스크립트를 활용한 콘텐츠 개발
-### Unity#D와 360도 카메라(insta130 ONE X2)를 사용하여 메타버스 플랫폼 개발. 제작한 플랫폼으로 공대 1층 SW빌리지를 구현해 다양한 기능을 넣어 제작. 만들어진 기능은 이후에 소상공인을 위한 콘텐츠 제작에서도 사용될 수 있게 제작.
+### Unity3D와 360도 카메라(insta130 ONE X2)를 사용하여 메타버스 플랫폼 개발. 제작한 플랫폼으로 공대 1층 SW빌리지를 구현해 다양한 기능을 넣어 제작. 만들어진 기능은 이후에 소상공인을 위한 콘텐츠 제작에서도 사용될 수 있게 제작.
 ### It aims to reduce dependence on foreign game engines and develop its own web-powered Metaverse platform. The goal is developing services that can be demonstrated using the company's 3D content development technology.
 ### We well develop a Metaverse platform using Unity (Unreal) (application of VR/AR technology, development of 360-degree panorama function) to implement customized functions that can contribute to small business owners and the local economy.
 ### The Metaverse contents will be developed using scripts such as Web 3D-based Three.js and Babylon.js for general-purpose platform development.
