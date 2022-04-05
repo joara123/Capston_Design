@@ -14,6 +14,10 @@
   - 작품전시(캡스톤, 동아리 등)
 * 커피도시페스타 사이트 보고 화면구성 생각해보기
 * three.js 예
+### <정육면체 회전>
+![image](https://user-images.githubusercontent.com/92451281/161731600-34a2503f-ed27-40ec-a08e-bf7b6127e757.png)
+### <파란 직선 두 개 그리기>
+![image](https://user-images.githubusercontent.com/92451281/161731639-7a1755b5-a0d9-42c6-a7e6-0cbb1798dbd1.png)
 ---
 ### 다음주에 진행할 내용
 * 공학관의 SW빌리지, 북카페 등 1층을 형태를 잡고 360 이미지(파노라마) 촬영 및 일부 만들어보기
