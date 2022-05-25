@@ -28,7 +28,7 @@ Follow 가 붙는 카메라는 target에 의존하며 target을 따라다니면�
 카메라의 조작형태는 기본적으로 마우스 및 키보드 방향키에 정의되어있는데 이것을 커스텀 하는 방법도있다 (ex 방향키가 아닌 wasd로 이동을 하고싶을때)       
 4-2    
 카메라 활성법
-카메라의 시점과 별개로 조작의 T/F를 하는 역활로는 
+카메라의 시점과 별개로 조작의 T/F를 하는 역할로는 
 camera.attachControl(null, true);
 camera.detachControl();
 두개가 있다
