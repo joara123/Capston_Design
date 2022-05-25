@@ -10,6 +10,8 @@
 * camera의 이동 구현(player 따라다니게)
 * 360도 이미지 넣기
 
+<img src="https://user-images.githubusercontent.com/92451281/170303462-7c5f5bf6-e90b-4668-a727-cc96ce34562b.png" width="50%" height="50%">
+
 <상세 구현 내용>
 * 플레이어 이동 구현
 * 이동 방법(w,a,s,d)
