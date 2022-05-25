@@ -164,3 +164,8 @@ scene.registerBeforeRender(
         clicks = 0;
     }))
 ```
+
+
+* 사용한 에셋
+  - https://www.mixamo.com/#/?page=1&query=walk
+  - https://www.turbosquid.com/3d-models/tree-pixel-low-poly-3d-model-1764347
