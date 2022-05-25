@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "noResolve": false,
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "experimentalDecorators": true,
+        "isolatedModules": false,
+        "lib": [
+            "dom",
+            "es2015.promise",
+            "es5"
+        ],
+        "declaration": true,
+        "outDir": "./",
+        "typeRoots": ["./@types", "./node_modules/@types"],
+        "allowJs": true
+    },
+    "types": [
+        "babylonjs",
+        "babylonjs-loaders",
+        ""
+    ],
+    "files": [
+        "./src/app.ts"
+    ]
+}
