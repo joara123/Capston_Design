@@ -10,7 +10,7 @@ P1참조 및 기본 세팅으로 둔다
 * https://lakelouise.tistory.com/35
 
 * 또한 html +css로 생성한 class 등에 또한 적용할 수 있다.
-* index.html에 P2,P3을 보고 세팅한다. (현시점에서는 html에 간단한 script와 css를 혼용하여 썻지만 추후에는 분리하는 것이 좋다)
+* index.html에 P2,P3을 보고 세팅한다. (현시점에서는 html에 간단한 script와 css를 혼용하여 썼지만 추후에는 분리하는 것이 좋다)
 
 1-2 babylon의 event P4 참조
 
@@ -20,7 +20,7 @@ P1참조 및 기본 세팅으로 둔다
 * event 참조 link
 https://doc.babylonjs.com/divingDeeper/events/observables
 
-* 최신버젼에서 복합적인 settimeout + observable 이벤트로 예약된 이벤트 발생 및 종료나 unity의 coroutine 및 비동기식의 연속적인 event를 promise로 묶어
+* 최신버전에서 복합적인 settimeout + observable 이벤트로 예약된 이벤트 발생 및 종료나 unity의 coroutine 및 비동기식의 연속적인 event를 promise로 묶어
 callback 대신 특정 시점등의 event를 발생 시킬수 있다.
 
 
@@ -31,7 +31,7 @@ callback 대신 특정 시점등의 event를 발생 시킬수 있다.
 * 새로운게 필요하면 새로 assets을 load하면 되지않는가라는 의문에서
 * resource download->passing & trans bite code -> my code is ready to read ->...
 이런식으로 실행하는데 (세부는 다를수 있음) clone이나 instance는 clone bite code -> my code is ready to read
-* 이렇게 빠르게 작업해줘서 빠를 수 밖에 없다. 또한 instance와 clone의 차이는 a를 b,c....z 만들어놓고 a의 형태를 따라해라 라고만 가르키는거면
+* 이렇게 빠르게 작업해줘서 빠를 수 밖에 없다. 또한 instance와 clone의 차이는 a를 b,c....z 만들어놓고 a의 형태를 따라해라 라고만 가리키는거면
 clone은 a를 b,c.....z 만들어놓고 각각 고유로 계산할 준비에 대한 할당을 주기때문에 data의 비용및 time의 비용도 추가되지만
 각각 고유의 형태를 가지고 있어서 변경이 가능한 반면 intance는 불가능하다.
 
