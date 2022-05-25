@@ -50,7 +50,7 @@ void OnCollisionEnter(Collision collision)
    * spehre inspector 창에서 material -> skybox -> cubemap 선택 후 material 이미지 select
 * (여기서 다른 장면으로 넘어갈 때 버튼 이벤트를 만들어 씬이동)
 * VRCamera.cs 참고
-* scene_change.cs 참
+* scene_change.cs 참고
 
 <img src = "https://user-images.githubusercontent.com/92451281/170264506-1de101e7-06e9-44e5-9dd0-3b3a64fbd46f.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170246017-12b5dace-b2f0-4189-a735-060b6368ca21.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170246231-8b6be46e-750e-4b4b-a3b3-09943b6b44a1.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170246326-3bb4d398-1bad-44d6-a28b-6334785de35c.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170246443-971ba87f-d565-4445-8312-0596d77d4a6b.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170246481-a07d736e-9bd2-4865-8972-7497f2ddb699.png" width="50%" height="50%">
 
