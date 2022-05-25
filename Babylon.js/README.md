@@ -26,6 +26,7 @@
     camera.maxCameraSpeed = 10;
     //camera.attachControl(canvas); //카메라 고정
 ```
+>>아래 코드는 전체 코드에서 일부인 애니메이션 asset 불러오기와 camer 설정 부분만 가져옴
 ```csharp
   BABYLON.SceneLoader.LoadAssetContainer("./assets/model/", "walk2.glb", scene, function(container){
         let player = container.meshes[0];    
@@ -41,7 +42,7 @@
 
 * 플레이어 이동
   - w와 s로 각각 전진, 후진 구현
-  - a는 왼쪽 방향으로 rotation, d는 오른쪽 방향으로 rotation 값 변경
+  - a는 왼쪽 방향으로 rotation.y, d는 오른쪽 방향으로 rotation.y 값 변경
 ```csharp
 scene.registerBeforeRender(
             function(){
@@ -49,8 +50,8 @@ scene.registerBeforeRender(
                 if(isW || isS){
                     var playerSpeed = 0.1;
                     var gravity = 0;
-                    var x = playerSpeed*parseFloat((String)(Math.sin(player.rotation.y)));
-                    var z = playerSpeed*parseFloat((String)(Math.cos(player.rotation.y)));
+                    var x = playerSpeed*parseFloat((String)(Math.sin(player.rotation.y))); //rotation.y 값 변경
+                    var z = playerSpeed*parseFloat((String)(Math.cos(player.rotation.y))); //rotation.y 값 변경
                     if(isW == true){
                         var forwards = new BABYLON.Vector3(-x, 0, -z);
                         player.moveWithCollisions(forwards);
@@ -70,12 +71,84 @@ scene.registerBeforeRender(
         )
 ```
 * 공학관 주변 표현 
+  - 공학관 건물은 blender를 사용하여 제작
   - turboSquid의 tree 에셋 사용
   - 하나씩 배치가 아닌 복제하여 여러 개 배치
-<img src="https://user-images.githubusercontent.com/92451281/170300038-a3f002c7-5404-4d05-96ed-7595d4d43558.png" width="50%" height="50%">
+```csharp
+    BABYLON.SceneLoader.LoadAssetContainer("./assets/model/", "tree.glb", scene, function(container){
+       let tree = container.meshes[0];
+       tree.name = "tree";
+       tree.rotation = new BABYLON.Vector3(0, Math.PI*2, 0)
+       tree.scaling = new BABYLON.Vector3(0.3, 0.3, 0.3)
+       tree.position = new BABYLON.Vector3(2, 0, 1)
+       tree.checkCollisions = false;
+       container.addAllToScene();
+       //복제..
+       for(var i = 0 ; i < 3 ; i++){
+            let entries = container.instantiateModelsToScene();
+            let playerMesh;
+            for(playerMesh of entries.rootNodes);
+            playerMesh.position.x += (i*2);
+        }
+    })
+```
+<img src="https://user-images.githubusercontent.com/52689917/170311815-6fa48c86-defe-46d2-9e92-f2a1bdcf0fb3.PNG" width="50%" height="50%">
 
-* 공학관 주요 장소 360도 이미지를 메타버스 안에서 구현
-* 버튼 클릭시 다음 장소로 이동   
+* 공학관 주요 장소 이동
+  - 버튼 클릭시 다음 장소로 이동
+  - 360도 이미지를 메타버스 안에서 구현
+```csharp
+//new scene2--------------
+    var scene2 = new BABYLON.Scene(engine); // 새롭게 만들 scene의 이름을 바꿔서 새로운 scene 생성
+    var camera2 = new BABYLON.ArcRotateCamera("Camera2", -Math.PI / 2,  Math.PI / 2, 5, BABYLON.Vector3.Zero(), scene2);
+    camera2.attachControl(canvas, true);
+    camera2.inputs.attached.mousewheel.detachControl();
+    var dome = new BABYLON.PhotoDome(
+        "testdome",
+        "./assets/textures/pic1.jpg", // 불러올 360 이미지
+        {
+            resolution: 32,
+            size: 1000
+        },
+        scene2
+    );.
+    .
+    .
+    . 
+    //-------------------
+```
+>> clicks 값으로 씬 이동 결정. box를 누르면 clicks값이 바뀐다
+```csharp
+    var clicks = 0;
+    var box = BABYLON.Mesh.CreateBox("box", 2, scene);
+    box.position = new BABYLON.Vector3(2, 1, 10);
+    box.scaling = new BABYLON.Vector3(0.25, 1, 0.25);
+    box.actionManager = new BABYLON.ActionManager(scene);
+    box.actionManager.registerAction(new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPickUpTrigger, function(){
+        //alert('box clicked')
+        clicks = 1;
+    })) 
+```
+>> 바뀐 clicks 값으로 위의 만들었던 해당 scene으로 이동
+```csharp
+    setTimeout(function(){
+        engine.stopRenderLoop();
 
-<img src="https://user-images.githubusercontent.com/92451281/170299170-c441c082-a894-45cc-91c7-fabd89dfac8b.png" width="50%" height="50%"><img src="https://user-images.githubusercontent.com/92451281/170299176-fe49bca3-3a83-4ac7-8b5d-e59d5650607b.png" width="50%" height="50%">
+        engine.runRenderLoop(function(){
+            switch(clicks){
+                case 0:
+                    scene.render();
+                break
+                case 1:
+                    scene2.render();
+                break
+                case 2:
+                    scene3.render();
+                break
+            }
+        });
+    }, 500);
+```
+<img src="https://user-images.githubusercontent.com/92451281/170299170-c441c082-a894-45cc-91c7-fabd89dfac8b.png" width="50%" height="50%">
+<img src="https://user-images.githubusercontent.com/92451281/170299176-fe49bca3-3a83-4ac7-8b5d-e59d5650607b.png" width="50%" height="50%">
 
