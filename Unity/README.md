@@ -1,4 +1,5 @@
 ## 시간 부족과 바빌론으로 구현할 때 모델링의 한계점으로 유니티로 구현한 부분
+
 ---
 <구현 전 큰 부분 계획>   
 1. 플레이어 이동(+충돌)
@@ -35,7 +36,7 @@
 
 * 각 층 마다의 강의실, 교수실의 정보를 담은 리스트를 작성하여 정보 제공
 
-<img src = "https://user-images.githubusercontent.com/92451281/170246715-77023e9a-82ad-46cc-b75f-ddc89b62b89a.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170246735-dea76533-d67d-49c4-98b8-fed165bd573c.png" width="50%" height="50%">
+<img src = "https://user-images.githubusercontent.com/92451281/170246715-77023e9a-82ad-46cc-b75f-ddc89b62b89a.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170246735-dea76533-d67d-49c4-98b8-fed165bd573c.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170250031-c2068c9f-caa4-4375-b2db-38fe00cea25c.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170250046-cf6f5bbb-2268-42ad-884e-1df76c574f8e.png" width="50%" height="50%">
 
 * 그 외, 모든 버튼 구현 (확인, 돌아가기, 옆으로 넘기는 등, 메뉴 버튼, 멘토링 버튼 등)
 
