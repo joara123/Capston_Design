@@ -24,7 +24,7 @@ The Metaverse contents will be developed using scripts such as Web 3D-based Thre
 After distributing the produced platform, various festivals, travel destinations, and unique places in the region can be used as Metaverse games or virtual experiences through avatars. By modifying and utilizing the platform with various contents, it can contribute to small business owners and the local economy.    
 
 ## 3. 기대효과 및 활용방안 - expected effect and utilization plan   
-제작된 플랫폼을 배포 후 다양한축제나 여행지, 지역의 특색있는 장소를 아바타를 통한 메타버스 게임이나 가상체험 등으로 사용될 수 있음.   
+제작된 플랫폼을 배포 후 다양한 축제나 여행지, 지역의 특색있는 장소를 아바타를 통한 메타버스 게임이나 가상체험 등으로 사용될 수 있음. 
 플랫폼을 다양한 콘텐츠로 수정, 활용할 수 있도록 하여, 소상공인 및 지역경제에 기여할 수 있도록 함.  
 
 After distributing the manufactured platform, various festivals, travel destinations, and unique places in the region can be used as Metaverse games or virtual experiences through avatars.    
