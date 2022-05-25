@@ -33,13 +33,13 @@ void OnCollisionEnter(Collision collision)
     }
 }
 ```
-<img src = "https://user-images.githubusercontent.com/92451281/170244641-e08d9467-eb5d-44ac-87e4-37dfd8469b0a.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170245680-7173fa00-1a9b-476a-bd58-1c386fe950a7.png" width="50%" height="50%">
+<img src = "https://user-images.githubusercontent.com/92451281/170244641-e08d9467-eb5d-44ac-87e4-37dfd8469b0a.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170245680-7173fa00-1a9b-476a-bd58-1c386fe950a7.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170322595-bf514db6-d303-41e1-813b-c084d5b658bc.gif" width="50%" height="50%">
 
 * 메뉴에서 멘토링실 예약시스템 구현
 * Mentoring_button.cs 참고
 * scene_change.cs 참고
 
-<img src = "https://user-images.githubusercontent.com/92451281/170245834-10b55e06-775c-4e7a-a3aa-ccafd88b2d10.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170245900-c5513914-a53b-41cc-8d25-ddba67d14ddf.png" width="50%" height="50%">
+<img src = "https://user-images.githubusercontent.com/92451281/170245834-10b55e06-775c-4e7a-a3aa-ccafd88b2d10.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170245900-c5513914-a53b-41cc-8d25-ddba67d14ddf.png" width="50%" height="50%"><img src="https://user-images.githubusercontent.com/92451281/170323771-a7441190-32c9-40a0-86ff-017c8fe59441.gif" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170324352-96927ef2-9ce4-4855-8108-52dcadec73d1.gif" width="50%" height="50%">
 
 * 360 카메라로 북카페, 멘토링실, 중앙현관 등을 찍어 360도로 둘러볼 수 있도록 구현 
 * <360 이미지 넣는 방법>
@@ -52,12 +52,12 @@ void OnCollisionEnter(Collision collision)
 * VRCamera.cs 참고
 * scene_change.cs 참고
 
-<img src = "https://user-images.githubusercontent.com/92451281/170264506-1de101e7-06e9-44e5-9dd0-3b3a64fbd46f.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170246017-12b5dace-b2f0-4189-a735-060b6368ca21.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170246231-8b6be46e-750e-4b4b-a3b3-09943b6b44a1.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170246326-3bb4d398-1bad-44d6-a28b-6334785de35c.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170246443-971ba87f-d565-4445-8312-0596d77d4a6b.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170246481-a07d736e-9bd2-4865-8972-7497f2ddb699.png" width="50%" height="50%">
+<img src = "https://user-images.githubusercontent.com/92451281/170264506-1de101e7-06e9-44e5-9dd0-3b3a64fbd46f.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170246017-12b5dace-b2f0-4189-a735-060b6368ca21.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170246231-8b6be46e-750e-4b4b-a3b3-09943b6b44a1.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170246326-3bb4d398-1bad-44d6-a28b-6334785de35c.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170246443-971ba87f-d565-4445-8312-0596d77d4a6b.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170246481-a07d736e-9bd2-4865-8972-7497f2ddb699.png" width="50%" height="50%"><img src="https://user-images.githubusercontent.com/92451281/170326186-9aaa0d77-08a8-4bea-81d5-a27ce92963e8.gif" height="50%" width="50%"><img src="https://user-images.githubusercontent.com/92451281/170326242-ce7d036b-7f5a-4b55-9554-3a9c0d5792cc.gif" height="50%" width="50%">
 
 * 각 층 마다의 강의실, 교수실의 정보를 담은 리스트를 작성하여 정보 제공
 
 <img src = "https://user-images.githubusercontent.com/92451281/170246715-77023e9a-82ad-46cc-b75f-ddc89b62b89a.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170246735-dea76533-d67d-49c4-98b8-fed165bd573c.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170250031-c2068c9f-caa4-4375-b2db-38fe00cea25c.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170250046-cf6f5bbb-2268-42ad-884e-1df76c574f8e.png" width="50%" height="50%">
-
+<img src="https://user-images.githubusercontent.com/92451281/170326531-06cbd83e-8456-4854-913c-5b1a8b03aba5.gif" height="50%" width="50%">
 * 그 외, 모든 버튼 구현 (확인, 돌아가기, 옆으로 넘기는 등, 메뉴 버튼, 멘토링 버튼 등)
 * 버튼 구현 함수 중 일부
 ```csharp
@@ -81,7 +81,7 @@ public void VR_1() //중앙 씬
 ...
 ```
 <플레이어 이동 방법>
-* 상하좌우(w,a,s,d 키)
+* 상화좌우(w,a,s,d 키)
 * 점프(space 키)
 * 마우스 이동(시야 이동)
 * 360도 둘러보기에서 마우스 드래그 (360도 이미지를 둘러볼 수 있음)
