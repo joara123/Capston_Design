@@ -86,7 +86,7 @@ public void VR_1() //중앙 씬
 * 마우스 이동(시야 이동)
 * 360도 둘러보기에서 마우스 드래그 (360도 이미지를 둘러볼 수 있음)
 * player_manager.cs 코드 중 일부
-* 플레이어 이동
+* 플레이어 이동 함수 코드
 ```csharp
     void PlayerMove() //플레이어 이동
     {
@@ -100,7 +100,7 @@ public void VR_1() //중앙 씬
         transform.Translate(Vector3.right * xSpeed * Time.deltaTime);
     }
  ```
- * 플레이어 점프
+ * 플레이어 점프 함수 코드
  ```csharp
     void Jump() //플레이어 점프
     {
@@ -119,8 +119,8 @@ public void VR_1() //중앙 씬
         }
     }
  ```
- * 시야 전회전
- ```cssharp
+ * 시야 전회전 함수 코드
+ ```csharp
     void RotCtrl() //시야 회전
     {
         float rotX = Input.GetAxis("Mouse Y") * rotSpeed;
