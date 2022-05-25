@@ -42,11 +42,17 @@ void OnCollisionEnter(Collision collision)
 <img src = "https://user-images.githubusercontent.com/92451281/170245834-10b55e06-775c-4e7a-a3aa-ccafd88b2d10.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170245900-c5513914-a53b-41cc-8d25-ddba67d14ddf.png" width="50%" height="50%">
 
 * 360 카메라로 북카페, 멘토링실, 중앙현관 등을 찍어 360도로 둘러볼 수 있도록 구현 
+* <360 이미지 넣는 방법>
+   * 360 카메라로 이미지 촬영
+   * 유니티 안에서 sphere 추가
+   * sphere 위치, camera 위치를 동일하게 맞춤
+   * material 생성 후 이미지 select
+   * spehre inspector 창에서 material -> skybox -> cubemap 선택 후 material 이미지 select
 * (여기서 다른 장면으로 넘어갈 때 버튼 이벤트를 만들어 씬이동)
 * VRCamera.cs 참고
 * scene_change.cs 참
 
-<img src = "https://user-images.githubusercontent.com/92451281/170246017-12b5dace-b2f0-4189-a735-060b6368ca21.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170246231-8b6be46e-750e-4b4b-a3b3-09943b6b44a1.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170246326-3bb4d398-1bad-44d6-a28b-6334785de35c.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170246443-971ba87f-d565-4445-8312-0596d77d4a6b.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170246481-a07d736e-9bd2-4865-8972-7497f2ddb699.png" width="50%" height="50%">
+<img src = "https://user-images.githubusercontent.com/92451281/170264506-1de101e7-06e9-44e5-9dd0-3b3a64fbd46f.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170246017-12b5dace-b2f0-4189-a735-060b6368ca21.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170246231-8b6be46e-750e-4b4b-a3b3-09943b6b44a1.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170246326-3bb4d398-1bad-44d6-a28b-6334785de35c.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170246443-971ba87f-d565-4445-8312-0596d77d4a6b.png" width="50%" height="50%"><img src = "https://user-images.githubusercontent.com/92451281/170246481-a07d736e-9bd2-4865-8972-7497f2ddb699.png" width="50%" height="50%">
 
 * 각 층 마다의 강의실, 교수실의 정보를 담은 리스트를 작성하여 정보 제공
 
