@@ -1,6 +1,8 @@
 # Capstone_Design
 ### 메타버스 콘텐츠 제작을 위한 메타버스 플랫폼 개발
 ### The Metaverse Platform Development for Metaverse Content Production
+<img src="https://user-images.githubusercontent.com/92451281/170306434-4c273e91-4c47-4734-a160-27203d492c6e.png" width="48%" height="48%"><img src="https://user-images.githubusercontent.com/92451281/170306661-4e25c3a9-480c-426a-9b66-72af2419c114.png" width="50%" height="50%">
+
 ### 팀명 - 어사유사
 ### 팀원 : 김소희(팀장), 송지원, 양혜원
 ---
