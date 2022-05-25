@@ -53,11 +53,11 @@ scene.registerBeforeRender(
                     var x = playerSpeed*parseFloat((String)(Math.sin(player.rotation.y))); //rotation.y 값 변경
                     var z = playerSpeed*parseFloat((String)(Math.cos(player.rotation.y))); //rotation.y 값 변경
                     if(isW == true){
-                        var forwards = new BABYLON.Vector3(-x, 0, -z);
+                        var forwards = new BABYLON.Vector3(-x, 0, -z); //전진
                         player.moveWithCollisions(forwards);
                     }
                     if(isS == true){
-                        var backwords = new BABYLON.Vector3(x, 0, z);
+                        var backwords = new BABYLON.Vector3(x, 0, z); //후진
                         player.moveWithCollisions(backwords);
                     }
                 }
