@@ -120,7 +120,7 @@ scene.registerBeforeRender(
 >> clicks 값으로 씬 이동 결정. box를 누르면 clicks값이 바뀐다
 ```csharp
     var clicks = 0;
-    var box = BABYLON.Mesh.CreateBox("box", 2, scene);
+    var box = BABYLON.Mesh.CreateBox("box", 2, scene); // 사진에 있는 흰색 긴 박스
     box.position = new BABYLON.Vector3(2, 1, 10);
     box.scaling = new BABYLON.Vector3(0.25, 1, 0.25);
     box.actionManager = new BABYLON.ActionManager(scene);
@@ -129,6 +129,8 @@ scene.registerBeforeRender(
         clicks = 1;
     })) 
 ```
+<img src="https://user-images.githubusercontent.com/52689917/170317758-21ff1769-9231-4869-85f7-b23c515af785.png" width="50%" height="50%">
+
 >> 바뀐 clicks 값으로 위의 만들었던 해당 scene으로 이동
 ```csharp
     setTimeout(function(){
@@ -149,6 +151,16 @@ scene.registerBeforeRender(
         });
     }, 500);
 ```
-<img src="https://user-images.githubusercontent.com/92451281/170299170-c441c082-a894-45cc-91c7-fabd89dfac8b.png" width="50%" height="50%">
-<img src="https://user-images.githubusercontent.com/92451281/170299176-fe49bca3-3a83-4ac7-8b5d-e59d5650607b.png" width="50%" height="50%">
+<img src="https://user-images.githubusercontent.com/92451281/170299170-c441c082-a894-45cc-91c7-fabd89dfac8b.png" width="50%" height="50%"><img src="https://user-images.githubusercontent.com/92451281/170299176-fe49bca3-3a83-4ac7-8b5d-e59d5650607b.png" width="50%" height="50%">
 
+>> 위 사진에 있는 검은색 box를 누르면 처음 화면으로 돌아감
+```csharp
+    var rbox = BABYLON.Mesh.CreateBox("rbox", 1, scene2);
+    rbox.position = new BABYLON.Vector3(2, 1, 10);
+    rbox.scaling = new BABYLON.Vector3(1, 1, 0.25);
+    rbox.actionManager = new BABYLON.ActionManager(scene2);
+    rbox.actionManager.registerAction(new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPickUpTrigger, function(){
+        //alert('box clicked')
+        clicks = 0;
+    }))
+```
